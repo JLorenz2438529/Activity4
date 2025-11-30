@@ -136,3 +136,6 @@ VALUES
 
 ALTER TABLE owners
 ADD COLUMN registeredDate DATE;
+
+ALTER TABLE your_table_name
+CHANGE COLUMN paymentdate paymenttime DATETIME;
