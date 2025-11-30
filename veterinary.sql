@@ -157,3 +157,9 @@ FROM payments;
 SELECT COUNT(*) AS total_appointments
 FROM appointments
 WHERE ownerID = 1;
+
+SELECT petName
+FROM appointments
+GROUP BY petName
+ORDER BY COUNT(*) DESC
+LIMIT 1;
