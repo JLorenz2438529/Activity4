@@ -39,3 +39,11 @@ CREATE TABLE doctors (
     hire_date DATE NOT NULL,                   
     status ENUM('Active', 'Inactive') DEFAULT 'Active'  
 );
+
+CREATE TABLE IF NOT EXISTS invoices (
+    invoiceid INT PRIMARY KEY,
+    appointid INT,
+    totalamount DECIMAL(10,2),
+    paymentdate TIME,
+    FOREIGN KEY (appointid) REFERENCES appointments(appointid)
+);
