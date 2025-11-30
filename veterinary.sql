@@ -146,3 +146,7 @@ WHERE petName = 'Simba' AND ownerID = 1;
 UPDATE doctors
 SET last_name = 'Reyes-Gonzales'
 WHERE doctor_id = 1;
+
+SELECT DISTINCT species
+FROM animals
+WHERE species IN ('Dog', 'Cat');
