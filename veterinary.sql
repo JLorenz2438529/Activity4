@@ -28,3 +28,14 @@ CREATE TABLE appointments (
     reason VARCHAR(255),
     FOREIGN KEY (animalid) REFERENCES animals(animalid)
 );
+
+CREATE TABLE doctors (
+    doctor_id INT AUTO_INCREMENT PRIMARY KEY,  
+    first_name VARCHAR(50) NOT NULL,           
+    last_name VARCHAR(50) NOT NULL,           
+    specialization VARCHAR(100),               
+    phone_number VARCHAR(15),                 
+    email VARCHAR(100) UNIQUE,                 
+    hire_date DATE NOT NULL,                   
+    status ENUM('Active', 'Inactive') DEFAULT 'Active'  
+);
