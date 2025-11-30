@@ -150,3 +150,6 @@ WHERE doctor_id = 1;
 SELECT DISTINCT species
 FROM animals
 WHERE species IN ('Dog', 'Cat');
+
+SELECT SUM(paymentAmount) AS total_sales
+FROM payments;
