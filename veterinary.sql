@@ -139,3 +139,6 @@ ADD COLUMN registeredDate DATE;
 
 ALTER TABLE your_table_name
 CHANGE COLUMN paymentdate paymenttime DATETIME;
+
+DELETE FROM appointments
+WHERE petName = 'Simba' AND ownerID = 1;
