@@ -142,3 +142,7 @@ CHANGE COLUMN paymentdate paymenttime DATETIME;
 
 DELETE FROM appointments
 WHERE petName = 'Simba' AND ownerID = 1;
+
+UPDATE doctors
+SET last_name = 'Reyes-Gonzales'
+WHERE doctor_id = 1;
